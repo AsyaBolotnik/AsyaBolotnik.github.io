@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>это я</title>
+</head>
+
+<style>
+
+body {
+	margin: 0;
+	background: blue;
+}
+
+div {
+position: absolute;
+	height: 100vh;
+	width: 100vh;
+	
+	
+
+}
+
+.mario {
+	top: 50%;
+	left: 90%;
+	transform: translate(-50%, -50%);
+	position: relative;
+	filter: drop-shadow(10px 10px black);
+	transform: all .1s;
+	animation: color-change 2s infinite;
+
+}
+
+img {
+	margin: 0;
+	padding: 0;
+	width: 500px;
+
+}
+
+@keyframes color-change {
+
+	from {
+    filter: hue-rotate(0deg) blur(30px);
+  }
+  to {
+    filter: hue-rotate(360deg)blur(0px);
+  }
+}
+
+
+</style>
+<body>
+	<div><img class="mario" src="Small-mario.png"></img></div>
+	
+	
+</body>
+</html>
